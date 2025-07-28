@@ -1,0 +1,16 @@
+scikit-learn
+
+pandas
+
+numpy
+
+matplotlib
+
+seaborn
+
+streamlit
+
+pyngrok
+
+ucimlrepo
+

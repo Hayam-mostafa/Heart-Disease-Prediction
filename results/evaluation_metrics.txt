@@ -1,0 +1,30 @@
+Model Evaluation Metrics
+========================
+
+Dataset: Heart Disease Prediction
+
+Overall Model Comparison
+------------------------
+Model                | Accuracy | Precision | Recall  | F1 Score | ROC AUC
+---------------------|----------|-----------|---------|----------|---------
+Logistic Regression  | 0.6333   | 0.5779    | 0.6333  | 0.6023   | 0.8830
+Decision Tree        | 0.4333   | 0.4998    | 0.4333  | 0.4568   | 0.6340
+Random Forest        | 0.5500   | 0.4565    | 0.5500  | 0.4952   | 0.8223
+Support Vector Machine | 0.5333 | 0.2844    | 0.5333  | 0.3710   | 0.7659
+
+✅ Best Performing Model: Logistic Regression
+
+Insights
+--------
+- Logistic Regression achieved the highest accuracy and ROC AUC.
+- Random Forest and SVM showed decent recall but lower precision.
+- Decision Tree had the lowest overall performance.
+- ROC AUC suggests Logistic Regression is most capable of distinguishing between classes.
+
+Recommendations
+---------------
+- Consider using Logistic Regression as baseline.
+- Try ensemble techniques like Voting Classifier.
+- Explore class balancing techniques if data is imbalanced.
+- Further tuning or feature engineering may improve the Random Forest and SVM results.
+

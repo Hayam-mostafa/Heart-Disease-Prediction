@@ -1,0 +1,19 @@
+from google.colab import files
+from pyngrok import conf, ngrok
+import time # Import the time module
+
+uploaded = files.upload()
+conf.get_default().auth_token ="30U2HAlJQbZebe7blq2x3NNyeJT_23d7hk7aPcVwQEHGzeeLf"
+
+# Terminate any active ngrok tunnels in this session
+ngrok.kill()
+time.sleep(5) # Add a short delay
+
+# Run Streamlit
+!streamlit run app.py &> streamlit.log &
+
+# Create tunnel
+public_url = ngrok.connect(addr=8501, proto='http')
+print("Streamlit App URL:", public_url)
+
+link--- > https://2caf3a099a78.ngrok-free.app/
